@@ -1,0 +1,20 @@
+@mixin base() {
+  display: inline-block;
+  border-radius: .2em;
+  font-family: "Fira Mono", monospace;
+  line-height: 1;
+  padding: .2em .4em;
+}
+
+.mw-key {
+  @include base();
+  background: hsl(0, 0%, 21%);
+  color: hsl(0, 0%, 100%);
+
+  &-plus {
+    @include base();
+    background: hsl(0, 0%, 48%);
+    color: hsl(0, 0%, 100%);
+    margin: 0 .1em;
+  }
+}
